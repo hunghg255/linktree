@@ -33,7 +33,7 @@ textarea::placeholder {
 
 html {
   /* 1 rem = 10px */
-  /* font-size: 62.5%; */
+  font-size: 62.5%;
 }
 
 body {
@@ -41,9 +41,6 @@ body {
   font-weight: 300;
   line-height: 1.4;
   overflow-x: hidden;
-  background: rgb(131,58,180);
-  background: linear-gradient(0deg, rgba(131,58,180,0.5074404761904762) 0%, rgba(253,29,29,0.31416316526610644) 50%, rgba(252,176,69,0.25253851540616246) 100%);
-  height: 100vh;
 }
 
 img {
