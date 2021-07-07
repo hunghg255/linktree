@@ -49,6 +49,8 @@ body {
 .socialList li a {
   padding: 1.6rem 2.4rem;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .socialList li:hover {
