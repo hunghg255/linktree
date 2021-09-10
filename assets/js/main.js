@@ -26,7 +26,7 @@ const social = [
   {
     id: 'twitter',
     name: 'Twitter',
-    value: 'https://twitter.com/SilverMiu',
+    value: 'https://twitter.com/hunghg255',
     icon: './assets/images/twitter.svg'
   },
   {
