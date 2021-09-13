@@ -20,7 +20,7 @@ const social = [
   {
     id: 'instagram',
     name: 'Instagram',
-    value: 'https://www.instagram.com/hellosilver_miu/',
+    value: 'https://www.instagram.com/hello_silver_miu/',
     icon: './assets/images/instagram.svg'
   },
   {
