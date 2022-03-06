@@ -1,4 +1,4 @@
-const staticDevCoffee = 'hung-xuan-v1';
+const staticDevCoffee = 'giahungv1';
 const assets = [
   '/',
   '/index.html',
