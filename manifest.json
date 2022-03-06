@@ -1,0 +1,39 @@
+{
+  "name": "Gia Hùng",
+  "short_name": "Gia Hùng",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#ed143d",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/H16.png",
+      "type": "image/png", "sizes": "16x16"
+    },
+    {
+      "src": "assets/images/H24.png",
+      "type": "image/png", "sizes": "24x24"
+    },
+    {
+      "src": "assets/images/H32.png",
+      "type": "image/png","sizes": "32x32"
+    },
+    {
+      "src": "assets/images/H64.png",
+      "type": "image/png", "sizes": "64x64"
+    },
+    {
+      "src": "assets/images/H128.png",
+      "type": "image/png", "sizes": "128x128"
+    },
+    {
+      "src": "assets/images/H256.png",
+      "type": "image/png", "sizes": "256x256"
+    },
+    {
+      "src": "assets/images/H512.png",
+      "type": "image/png", "sizes": "512x512"
+    }
+  ]
+}
