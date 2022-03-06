@@ -2,6 +2,7 @@ const staticDevCoffee = 'giahungv1';
 const assets = [
   '/',
   '/index.html',
+  '/service.js',
   '/assets/css/style.css',
   '/assets/js/main.js',
   '/assets/images/avatar.jpeg',
