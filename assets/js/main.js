@@ -11,6 +11,19 @@ const social = [
     value: 'giahung197bg@gmail.com',
     icon: './assets/images/email.svg',
   },
+  ,
+  {
+    id: 'linkedin',
+    name: 'Linkedin',
+    value: 'https://www.linkedin.com/in/hoanggiahung/',
+    icon: './assets/images/linkedin.svg',
+  },
+  {
+    id: 'github',
+    name: 'Github',
+    value: 'https://github.com/hunghg255',
+    icon: './assets/images/github.svg',
+  },
   {
     id: 'fb',
     name: 'Facebook',
@@ -30,16 +43,16 @@ const social = [
     icon: './assets/images/twitter.svg',
   },
   {
-    id: 'linkedin',
-    name: 'Linkedin',
-    value: 'https://www.linkedin.com/in/hoanggiahung/',
-    icon: './assets/images/linkedin.svg',
+    id: 'discord',
+    name: 'Hùng#6831',
+    value: '',
+    icon: './assets/images/discord.png',
   },
   {
-    id: 'github',
-    name: 'Github',
-    value: 'https://github.com/hunghg255',
-    icon: './assets/images/github.svg',
+    id: 'spotify',
+    name: 'Spotify',
+    value: 'https://open.spotify.com/user/1joyq9xxlhgg2ykc992tug433',
+    icon: './assets/images/spotify.png',
   },
   {
     id: 'qr',
@@ -58,6 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (item.id === 'email') link = `mailto:${item.value}`;
 
     let liStr = `<li><a href="${link}" target="_blank"><img src="${item.icon}" alt="" /><span>${item.name}</span></a></li>`;
+
+    if (!link)
+      liStr = `<li id="btnCopy"><img src="${item.icon}" alt="" /><span>${item.name}</span></li>`;
 
     if (item.id === 'qr')
       liStr = `<li id="btnQr"><a href="javascript:void(0)"><img src="${item.icon}" alt="" /><span>${item.name}</span></a></li>`;
@@ -82,4 +98,15 @@ document.addEventListener('DOMContentLoaded', () => {
       qrCodeELe.classList.toggle('active');
     }
   });
+
+  // copy to board
+  const btnCopy = document.querySelector('#btnCopy');
+  const addToClipboard = async (link) => {
+    await navigator.clipboard.writeText(link);
+  };
+  const copyLink = async (link) => {
+    const copied = await addToClipboard(link);
+    alert(`Copied: ${link}`);
+  };
+  btnCopy.addEventListener('click', () => copyLink(btnCopy.textContent));
 });

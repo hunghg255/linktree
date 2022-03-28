@@ -53,6 +53,14 @@ body {
   justify-content: flex-start;
 }
 
+#btnCopy  {
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
 .socialList li:hover {
   transform: translateY(-2px);
 }
