@@ -1,17 +1,10 @@
 const social = [
   {
-    id: 'phone',
-    name: 'Phone Number',
-    value: '0374390536',
-    icon: './assets/images/call.svg',
-  },
-  {
     id: 'email',
     name: 'Email',
     value: 'giahung197bg@gmail.com',
     icon: './assets/images/email.svg',
   },
-  ,
   {
     id: 'linkedin',
     name: 'Linkedin',
