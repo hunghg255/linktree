@@ -18,6 +18,12 @@ const social = [
     icon: './assets/images/github.svg',
   },
   {
+    id: 'skype',
+    name: 'Skype',
+    value: 'skype:live:giahung197bg?chat',
+    icon: './assets/images/skype.svg',
+  },
+  {
     id: 'fb',
     name: 'Facebook',
     value: 'https://facebook.com/hunghg255',
