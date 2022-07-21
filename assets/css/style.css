@@ -3,10 +3,12 @@
 @import './setting.css';
 
 body {
-  /* height: 100vh; */
-  /* background-color: rgb(255 249 49 / 20%); */
-
+  height: 100vh;
   background-image: linear-gradient(135deg, transparent 0%, transparent 17%,rgba(87, 146, 234,0.6) 17%, rgba(87, 146, 234,0.6) 59%,transparent 59%, transparent 64%,rgba(34, 81, 222,0.6) 64%, rgba(34, 81, 222,0.6) 100%),linear-gradient(45deg, transparent 0%, transparent 2%,rgb(87, 146, 234) 2%, rgb(87, 146, 234) 46%,rgb(114, 178, 239) 46%, rgb(114, 178, 239) 54%,transparent 54%, transparent 63%,rgb(7, 48, 216) 63%, rgb(7, 48, 216) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+}
+
+#wrap {
+  height: 100%;
 }
 
 #app {
@@ -17,6 +19,17 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #header {
@@ -48,6 +61,10 @@ body {
 
 .socialList li:not(:last-child) {
   margin-bottom: 1.8rem;
+}
+
+.socialList li:last-child {
+  margin-bottom: 50px;
 }
 
 .socialList li a {

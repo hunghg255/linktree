@@ -66,8 +66,13 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.22/dist/vanta.birds.min.js"></script>
   </head>
   <body>
+    <div id="wrap">
+
     <div id="app">
       <!-- Header -->
       <header id="header">
@@ -90,11 +95,26 @@
         <img class="imgQrCode" src="./assets/images/qrhung.png" alt="QR code" />
       </div>
     </div>
+  </div>
 
     <!-- Lib js-->
 
     <!-- Main js -->
     <script src="./assets/js/main.js"></script>
     <script src="./service.js"></script>
+
+    <script>
+      VANTA.BIRDS({
+        el: "#wrap",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0
+      })
+      </script>
   </body>
 </html>
