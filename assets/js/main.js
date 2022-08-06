@@ -72,10 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let liStr = `<li><a href="${link}" target="_blank"><img src="${item.icon}" alt="" /><span>${item.name}</span></a></li>`;
 
     if (!link)
-      liStr = `<li id="btnCopy"><img src="${item.icon}" alt="" /><span>${item.name}</span></li>`;
+      liStr = `<li id="btnCopy"><span><img src="${item.icon}" alt="" /><span>${item.name}</span></span></li>`;
 
     if (item.id === 'qr')
-      liStr = `<li id="btnQr"><a href="javascript:void(0)"><img src="${item.icon}" alt="" /><span>${item.name}</span></a></li>`;
+      liStr = `<li id="btnQr"><span><img src="${item.icon}" alt="" /><span>${item.name}</span></span></li>`;
 
     acc += liStr;
     return acc;

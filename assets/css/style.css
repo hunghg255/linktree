@@ -61,6 +61,7 @@ body {
   border-radius: .8rem;
   box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.1);
   transition: 300ms;
+  overflow: hidden;
 }
 
 .socialList li:not(:last-child) {
@@ -78,14 +79,27 @@ body {
   justify-content: flex-start;
 }
 
-#btnCopy  {
+#btnCopy > span {
   padding: 1.6rem 2.4rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   cursor: pointer;
 }
-
+.socialList #btnCopy:hover > span {
+  background-color: rgba(179, 250, 255, 0.178);
+}
+#btnQr > span {
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  background: #fff;
+}
+.socialList #btnQr:hover > span {
+  background-color: rgba(179, 250, 255, 0.178);
+}
 .socialList li:hover {
   transform: translateY(-2px);
 }
@@ -93,6 +107,7 @@ body {
 .socialList li:hover a {
   background-color: rgba(179, 250, 255, 0.178);
 }
+
 
 .socialList img {
   max-width: 24px;
