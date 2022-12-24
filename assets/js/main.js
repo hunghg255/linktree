@@ -18,10 +18,16 @@ const social = [
     icon: './assets/images/github.svg',
   },
   {
-    id: 'skype',
-    name: 'Skype',
-    value: 'skype:live:giahung197bg?chat',
-    icon: './assets/images/skype.svg',
+    id: 'tiktok',
+    name: 'Tiktok',
+    value: 'https://www.tiktok.com/@coder197',
+    icon: './assets/images/tiktok.svg',
+  },
+  {
+    id: 'youtube',
+    name: 'Youtube',
+    value: 'https://www.youtube.com/@coder197',
+    icon: './assets/images/youtube.svg',
   },
   {
     id: 'fb',
@@ -34,6 +40,12 @@ const social = [
     name: 'Instagram',
     value: 'https://www.instagram.com/hello_silver_miu/',
     icon: './assets/images/instagram.svg',
+  },
+  {
+    id: 'skype',
+    name: 'Skype',
+    value: 'skype:live:giahung197bg?chat',
+    icon: './assets/images/skype.svg',
   },
   {
     id: 'twitter',
@@ -55,7 +67,7 @@ const social = [
   },
   {
     id: 'qr',
-    name: 'Qr code',
+    name: 'QR code',
     value: '',
     icon: './assets/images/qr-code.png',
   },

@@ -4,7 +4,11 @@
 
 body {
   min-height: 100vh;
-  background-image: linear-gradient(135deg, transparent 0%, transparent 17%,rgba(87, 146, 234,0.6) 17%, rgba(87, 146, 234,0.6) 59%,transparent 59%, transparent 64%,rgba(34, 81, 222,0.6) 64%, rgba(34, 81, 222,0.6) 100%),linear-gradient(45deg, transparent 0%, transparent 2%,rgb(87, 146, 234) 2%, rgb(87, 146, 234) 46%,rgb(114, 178, 239) 46%, rgb(114, 178, 239) 54%,transparent 54%, transparent 63%,rgb(7, 48, 216) 63%, rgb(7, 48, 216) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+  background-image: url('../images/bg.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
 }
 
 #wrap {
@@ -19,7 +23,7 @@ body {
   width: 100%;
   height: 100%;
   max-width: 576px;
-  padding: 5rem 1.5rem;
+  padding: 5rem 1rem;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -40,13 +44,13 @@ body {
   text-align: center;
 }
 
-#header img{
+#header > img{
   max-width: 12rem;
   border-radius: 50%;
   margin: auto;
   object-fit: cover;
   box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.2);
-  border: 1px solid #fff;
+  border: 2px solid #fff;
 }
 
 #header p {
@@ -55,6 +59,14 @@ body {
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0 10px rgba(0,0,0,.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#header p img {
+  max-width: 34px;
 }
 
 .socialList li {
@@ -132,7 +144,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
