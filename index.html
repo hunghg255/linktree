@@ -71,8 +71,6 @@
     <!-- Main css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.22/dist/vanta.birds.min.js"></script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -125,24 +123,14 @@
       </div>
     </div>
 
+    <video class="bgVideo" autoplay="" loop="" muted="">
+      <source src="./assets/images/2160p.mp4" type="video/mp4" />
+    </video>
+
     <!-- Lib js-->
 
     <!-- Main js -->
     <script src="./assets/js/main.js"></script>
     <script src="./service.js"></script>
-
-    <script>
-      VANTA.BIRDS({
-        el: '#wrap',
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        backgroundAlpha: 0,
-      });
-    </script>
   </body>
 </html>

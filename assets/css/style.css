@@ -3,13 +3,7 @@
 @import './setting.css';
 
 body {
-  min-height: 100vh;
-  background-image: url('../images/bg.webp');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  backdrop-filter: blur(5px);
-  overflow: overlay;
+  background: black;
 }
 
 #wrap {
@@ -30,6 +24,8 @@ body {
   flex-direction: column;
   animation-name: fade;
   animation-duration: 3.5s;
+  position: relative;
+  z-index: 2;
 }
 
 @keyframes fade {
@@ -45,7 +41,7 @@ body {
   text-align: center;
 }
 
-#header > img{
+#header > img {
   max-width: 12rem;
   border-radius: 50%;
   margin: auto;
@@ -59,7 +55,7 @@ body {
   margin: 1rem 0 3.6rem;
   font-weight: bold;
   color: #fff;
-  text-shadow: 0 0 10px rgba(0,0,0,.8);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +68,7 @@ body {
 
 .socialList li {
   background-color: #fff;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   box-shadow: 0 0 14px 4px rgba(0, 0, 0, 0.1);
   transition: 300ms;
   overflow: hidden;
@@ -122,7 +118,6 @@ body {
   background-color: rgba(179, 250, 255, 0.178);
 }
 
-
 .socialList img {
   max-width: 24px;
   margin-right: 1.6rem;
@@ -161,3 +156,15 @@ body {
   pointer-events: initial;
 }
 
+.bgVideo {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
