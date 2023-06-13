@@ -55,7 +55,7 @@ const social = [
   },
   {
     id: 'discord',
-    name: 'Hùng#6831',
+    name: 'hunghg255',
     value: '',
     icon: './assets/images/discord.png',
   },
