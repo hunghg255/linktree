@@ -1,13 +1,8 @@
 @import './reset.css';
-
 @import './setting.css';
 
 body {
   background: black;
-}
-
-#wrap {
-  /* height: 100%; */
 }
 
 #wrap > canvas {
