@@ -20,14 +20,8 @@ const social = [
   {
     id: 'tiktok',
     name: 'Tiktok',
-    value: 'https://www.tiktok.com/@coder197',
+    value: 'https://www.tiktok.com/@onlyfrontend',
     icon: './assets/images/tiktok.svg',
-  },
-  {
-    id: 'youtube',
-    name: 'Youtube',
-    value: 'https://www.youtube.com/@coder197',
-    icon: './assets/images/youtube.svg',
   },
   {
     id: 'fb',
